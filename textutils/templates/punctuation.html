@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze Text</title>
+     <link rel="stylesheet" href="{% static 'textutils/style.css' %}?v=5">
+</head>
+<body>
+<h1> Your Analyzed text-{{purpose}}</h1>
+<p>
+    <pre>{{analyzed_text}}</pre><br>
+    {{count}}
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    
+    background-image: url('back.png');
+    background-size: cover;        
+    background-repeat: no-repeat;   
+    background-position: center;
+    border-radius: 5px;  
+    height: 100vh; 
+    margin: 0; 
+    
+}
+
+h1 {
+  text-shadow: 2px 2px 5px orange;
+  text-transform: uppercase;
+  font-family: Georgia,'Times New Roman', Times, serif;
+}
+
+label{
+  text-shadow: 2px 2px 5px orange;
+  text-transform: uppercase;
+  font-family: Georgia,'Times New Roman', Times, serif;
+  font-size: 20px;
+
+}
+
+button{
+    background-color:wheat;
+    font-size: 25px;
+    margin:5px;
+    border-radius: 20px;
+    
+}
+
+#txt{
+    background-color: tan;
+}
+
+

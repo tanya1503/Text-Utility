@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Utils</title>
+    <link rel="stylesheet" href="{% static 'textutils/style.css' %}?v=5">
+
+
+</head>
+<body>
+<h1> Welcome to the text analyazer. Enter your text below</h1>
+<form action='/Removepunc' method='post'> {% csrf_token %}
+
+  
+    
+  <textarea name='text' id="txt" style='width: 1097px; height: 257px;'></textarea></label><br>
+  <label><input type="checkbox" name="remove" > Remove Punctuations</label><br>
+  <label><input type="checkbox" name="fullcaps" >UPPERCASE</label><br>
+   <label><input type="checkbox" name="newlineremover" >New line remover</label><br>
+   <label><input type="checkbox" name="spaceremove" >Extra Space Remover</label><br>
+   <label><input type="checkbox" name="counting" >Counting</label><br>
+
+   <button type='submit'>Analyze Text</button>
+</form>
+</body>
+</html>
